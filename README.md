@@ -53,5 +53,3 @@ O **SUS Cidadão** é uma solução de Inteligência Artificial desenhada para e
 | **Engenheira de Dados** | Jhiovana Silva Ribeiro |
 | **MLOps / LLMOps** | Tayrine Hevellin Zitkoski |
 ---
-## 📁 Documentação da Semana 1
-* O **Documento de Definição de Produto e Requisitos (PDR)** oficial e completo da Semana 1 encontra-se na pasta [`docs/pdr_sus_cidadao_semana1.txt`](./docs/pdr_sus_cidadao_semana1.txt).
