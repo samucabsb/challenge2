@@ -1,4 +1,4 @@
-]# 🏥 SUS Cidadão (NavegaSUS)
+🏥 SUS Cidadão (NavegaSUS)
 > **Apoio Inteligente à Tomada de Decisão para Acesso Gratuito a Medicamentos e Exames no SUS**  
 > *Challenge 2: Qualidade de Vida e Tomada de Decisão com IA* — **Instituto Eldorado | Residência em Inteligência Artificial (UnB / Softex)**
 ---
