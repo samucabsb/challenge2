@@ -8,7 +8,7 @@ help:
 	@echo "  make test           - Executa os testes no backend"
 	@echo "  make run-api        - Inicia a API FastAPI (0.0.0.0:8000)"
 	@echo "  make run-ui         - Inicia a interface Streamlit"
-	@echo "  make eval           - Executa o benchmark com RAGAS"
+	@echo "  make eval           - Valida os datasets e avalia o guardrail (baseline)"
 	@echo "  make docker-build   - Constrói a imagem Docker do backend"
 	@echo "  make clean          - Limpa caches e artefatos temporários"
 
@@ -32,7 +32,8 @@ run-ui:
 	streamlit run frontend/app_streamlit.py --server.port 8501
 
 eval:
-	python evals/runners/ragas_runner.py
+	uv run --project backend python evals/runners/validar_datasets.py
+	uv run --project backend python evals/runners/guardrail_runner.py --alvo evals.baselines.palavras_chave:deve_bloquear
 
 docker-build:
 	docker build -t sus-cidadao-backend:latest backend
